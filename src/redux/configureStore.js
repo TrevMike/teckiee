@@ -1,13 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+// import { createWrapper } from "next-redux-wrapper";
 import employeeInfoReducer from "./ducks/employeeInfo";
 
-const makeStore = () => {
-  const store = configureStore({
-    reducer: {
-      employeeState: employeeInfoReducer,
-    },
-  });
-  return store;
-};
+const store = configureStore({
+  reducer: {
+    employeeState: employeeInfoReducer,
+  },
+});
 
-export default makeStore;
+export default store;

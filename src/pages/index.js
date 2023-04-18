@@ -1,7 +1,11 @@
 import Head from "next/head";
-
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+// import test from "../tailwind/"
+// import "@/tailwind/output.css";
+import Pricing from "@/components/home/Pricing";
+import Quote from "@/components/home/Quote";
+import HeroLanding from "@/components/home/HeroLanding";
+import BusinessPartners from "@/components/home/BusinessPartners";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +18,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>Hello World</main>
+      <main className="w-full">
+        <HeroLanding />
+        <Quote />
+        <Pricing />
+        <BusinessPartners />
+      </main>
     </>
   );
 }
+/*
+display:flex;
+justify-content:center;
+width:100%
+*/

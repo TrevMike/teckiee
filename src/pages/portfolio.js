@@ -6,7 +6,7 @@ function Portfolio() {
       <Head>
         <title>Teckiee | Portfolio</title>
       </Head>
-      <div>This is the Portfolio Page</div>
+      <div className="pt-14">This is the Portfolio Page</div>
     </>
   );
 }

@@ -6,7 +6,7 @@ function About() {
       <Head>
         <title>Teckiee | About Us</title>
       </Head>
-      <div>This is the About Us Page</div>
+      <div className="pt-14">This is the About Us Page</div>
     </>
   );
 }

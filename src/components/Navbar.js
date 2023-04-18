@@ -2,9 +2,10 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <>
-      <nav>
-        <ul>
+    <div className="relative z-50 w-full">
+      <nav className="fixed top-0 left-0 right-0 flex justify-between bg-gradient-to-r from-violet-700 to-violet-400 ... ">
+        <div className="flex items-center">Logo</div>
+        <ul className="flex justify-evenly w-6/12 text-slate-100 my-4">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -22,7 +23,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 }
 export default Navbar;

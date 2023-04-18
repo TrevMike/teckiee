@@ -6,7 +6,7 @@ function FAQs() {
       <Head>
         <title>Teckiee | FAQs</title>
       </Head>
-      <div>This is the FAQs Page</div>
+      <div className="pt-14">This is the FAQs Page</div>
     </>
   );
 }

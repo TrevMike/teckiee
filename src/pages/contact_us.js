@@ -6,7 +6,7 @@ function ContactUs() {
       <Head>
         <title>Teckiee | Contact Us</title>
       </Head>
-      <div>This is the Contact Us Page</div>
+      <div className="pt-14">This is the Contact Us Page</div>
     </>
   );
 }

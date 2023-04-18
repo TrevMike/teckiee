@@ -1,14 +1,16 @@
-import "@/styles/globals.css";
+import "@/tailwind/output.css";
 import Layout from "@/components/Layout";
+import { Provider } from "react-redux";
 import store from "@/redux/configureStore";
-import { createWrapper } from "next-redux-wrapper";
 
 function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Provider store={store}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
   );
 }
-const wrapper = createWrapper(store);
-export default wrapper.withRedux(App);
+
+export default App;
