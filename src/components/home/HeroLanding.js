@@ -43,7 +43,9 @@ function HeroLanding() {
         </video>
         <div className="text-slate-100 absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center ">
           <h1 className="">Teckiee</h1>
-          <span id="typed" style={{ whiteSpace: "pre" }} />
+          <div>
+            <span id="typed" style={{ whiteSpace: "pre" }} />
+          </div>
         </div>
       </div>
       <div className="bg-zinc-50">
