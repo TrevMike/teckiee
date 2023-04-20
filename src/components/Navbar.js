@@ -1,26 +1,36 @@
 import Link from "next/link";
+import Image from "next/image";
 
 function Navbar() {
+  const menu = [
+    { path: "/", title: "HOME" },
+    { path: "/portfolio", title: "PORTFOLIO" },
+    { path: "/our_services", title: "OUR SERVICES" },
+    { path: "/about", title: "ABOUT US" },
+    { path: "/contact_us", title: "CONTACT US" },
+  ];
   return (
     <div className="relative z-50 w-full">
-      <nav className="fixed top-0 left-0 right-0 flex justify-between bg-gradient-to-r from-violet-700 to-violet-400 ... ">
-        <div className="flex items-center">Logo</div>
+      <nav className="fixed top-0 left-0 right-0 flex justify-between bg-gradient-to-r from-violet-700 to-violet-400 ... shadow-lg shadow-sky-950/50">
+        <Link href="/" className="">
+          <div className="flex items-center justify-center relative w-14 h-14 ">
+            <Image
+              src="/robotHead.svg"
+              alt="Robot Head Logo"
+              fill
+              priority={true}
+              className="ml-4"
+            />
+          </div>
+        </Link>
         <ul className="flex justify-evenly w-6/12 text-slate-100 my-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link href="/our_services">Our Services</Link>
-          </li>
-          <li>
-            <Link href="/about">About Us</Link>
-          </li>
-          <li>
-            <Link href="/contact_us">Contact Us</Link>
-          </li>
+          {menu.map((item, index) => {
+            return (
+              <li key={index} className="font-inter font-normal">
+                <Link href={item.path}>{item.title}</Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </div>

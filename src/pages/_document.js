@@ -4,7 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* <link rel="stylesheet" href="@/tailwind/output.css" /> */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Inter:wght@400;500;800&family=Montserrat:wght@300;400;500&family=Nunito:wght@300&family=Poppins:wght@500;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

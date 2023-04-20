@@ -5,7 +5,15 @@ module.exports = {
   ],
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fira: ['"Fira Sans"', "sans-serif"],
+        inter: ['"Inter"', "san-serif"],
+        montserrat: ['"Montserrat"', "sans-serif"],
+        nunito: ['"Nunito"', "sans-serif"],
+        poppins: ['"Poppins"', "sans-serif"],
+      },
+    },
   },
 
   plugins: [],
