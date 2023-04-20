@@ -12,15 +12,16 @@ function HeroLanding() {
   useEffect(() => {
     const options = {
       strings: [
-        `Let Us Handle <span class="text-cyan-200 underline">IT</span>!`,
-        `Let Us Handle <span class="text-cyan-200 underline">Marketing</span>!`,
-        `Let Us Handle <span class="text-cyan-200 underline">Social Media</span>!`,
-        `Let Us Handle <span class="text-cyan-200 underline">Graphic Design</span>!`,
-        `Let Us Handle <span class="text-cyan-200 underline">Networking</span>!`,
-        `Let Us Handle <span class="text-cyan-200 underline">Custom Solutions</span>!`,
+        `Let Us Handle <span class="text-indigo-500 ">Web Design!</span>`,
+        `Let Us Handle <span class="text-indigo-500 ">Graphic Design!</span>`,
+        `Let Us Handle <span class="text-indigo-500 ">Marketing!</span>`,
+        `Let Us Handle <span class="text-indigo-500 ">Social Media!</span>`,
+        `Let Us Handle <span class="text-indigo-500 ">Networking!</span>`,
+        `Let Us Handle <span class="text-indigo-500 ">Custom Solutions!</span>`,
+        `Let Us Handle <span class="text-indigo-500 ">IT</span> all!`,
       ],
-      typeSpeed: 75,
-      backSpeed: 75,
+      typeSpeed: 45,
+      backSpeed: 95,
       loop: true,
       cursorChar: "|",
     };
