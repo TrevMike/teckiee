@@ -16,8 +16,15 @@ export default function Home() {
   const pageCheck = useRef(false);
   useEffect(() => {
     if (pageCheck.current) {
-      // write code here
-      dispatch(updateMenu("testing"));
+      dispatch(
+        updateMenu({
+          home: true,
+          portfolio: false,
+          ourServices: false,
+          aboutUs: false,
+          contactUs: false,
+        })
+      );
     }
     return () => {
       pageCheck.current = true;

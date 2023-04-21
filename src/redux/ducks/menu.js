@@ -22,8 +22,7 @@ const menuData = createSlice({
   },
   reducers: {
     updateMenu: (state, action) => {
-      const obj = action.payload;
-      state.topMenu.menuPlacement = { ...state.menuPlacement, obj };
+      state.topMenu.menuPlacement = action.payload;
     },
   },
 });
