@@ -1,15 +1,28 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-// import test from "../tailwind/"
-// import "@/tailwind/output.css";
 import Pricing from "@/components/home/Pricing";
 import Quote from "@/components/home/Quote";
 import HeroLanding from "@/components/home/HeroLanding";
 import BusinessPartners from "@/components/home/BusinessPartners";
+import { useEffect, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { updateMenu } from "@/redux/ducks/menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const dispatch = useDispatch();
+  const menuCheck = useSelector(state => state.menu.topMenu.mainTopMenu);
+  const pageCheck = useRef(false);
+  useEffect(() => {
+    if (pageCheck.current) {
+      // write code here
+      dispatch(updateMenu("testing"));
+    }
+    return () => {
+      pageCheck.current = true;
+    };
+  }, []);
   return (
     <>
       <Head>

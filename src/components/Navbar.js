@@ -1,14 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 function Navbar() {
-  const menu = [
-    { path: "/", title: "HOME" },
-    { path: "/portfolio", title: "PORTFOLIO" },
-    { path: "/our_services", title: "OUR SERVICES" },
-    { path: "/about", title: "ABOUT US" },
-    { path: "/contact_us", title: "CONTACT US" },
-  ];
+  const menu = useSelector(state => state.menu.topMenu.mainTopMenu);
   return (
     <div className="relative z-50 w-full">
       <nav className="fixed top-0 left-0 right-0 flex justify-between bg-gradient-to-r from-violet-700 to-violet-400 ... shadow-lg shadow-sky-950/50">

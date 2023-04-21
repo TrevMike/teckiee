@@ -1,3 +1,4 @@
+import WebServices from "@/components/ourServices/WebServices";
 import Head from "next/head";
 
 function OurServices() {
@@ -6,7 +7,9 @@ function OurServices() {
       <Head>
         <title>Teckiee | Our Services</title>
       </Head>
-      <div className="pt-14">This is the Our Services Page</div>
+      <div className="pt-14">
+        <WebServices />
+      </div>
     </>
   );
 }

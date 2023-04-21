@@ -36,17 +36,17 @@ function HeroLanding() {
     {
       svgURL: "/web.svg",
       title: "Web & App Development",
-      p: "Save time and energy with our in-house professionals so you can focus on what matters on your business",
+      p: "We create custom websites and web apps that are fast, user-friendly, and optimized for search engines.",
     },
     {
       svgURL: "/networking.svg",
       title: "Networking Solutions",
-      p: "Save time and energy with our in-house professionals so you can focus on what matters on your business",
+      p: "We'll work with you to design and implement secure, reliable networks that meet the unique needs of your business.",
     },
     {
       svgURL: "/design.svg",
       title: "Design & Marketing",
-      p: "Save time and energy with our in-house professionals so you can focus on what matters on your business",
+      p: "Our team can help you create a powerful brand through graphic design, branding, social media, and SEO.",
     },
   ];
   return (
