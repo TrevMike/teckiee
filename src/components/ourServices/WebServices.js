@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { useState } from "react";
-import ContactUsModal from "../contactUs/ContactUsModal";
-
+import { useDispatch } from "react-redux";
+import { contactModalHandler } from "@/redux/ducks/modals";
 function WebServices() {
-  const [toggle, setToggle] = useState(false);
-  //   console.log(toggle);
+  const dispatch = useDispatch();
+
   const pricing = [
     {
       title: "Equinox Plan",
@@ -84,7 +83,7 @@ function WebServices() {
               </ol>
               <div className="w-full flex justify-center">
                 <button
-                  onClick={() => setToggle(!toggle)}
+                  onClick={() => dispatch(contactModalHandler())}
                   className="bg-gradient-to-tr from-indigo-600 to-purple-500 ... py-2 px-6 round rounded-3xl text-slate-100 font-poppins font-medium"
                 >
                   Getting Started
@@ -94,7 +93,7 @@ function WebServices() {
           );
         })}
       </div>
-      {toggle ? <ContactUsModal /> : ""}
+      {/* {toggle ? <ContactUsModal /> : ""} */}
     </section>
   );
 }

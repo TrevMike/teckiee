@@ -5,31 +5,30 @@ import Quote from "@/components/home/Quote";
 import HeroLanding from "@/components/home/HeroLanding";
 import BusinessPartners from "@/components/home/BusinessPartners";
 import { useEffect, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { updateMenu } from "@/redux/ducks/menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const dispatch = useDispatch();
-  const menuCheck = useSelector(state => state.menu.topMenu.mainTopMenu);
   const pageCheck = useRef(false);
   useEffect(() => {
     if (pageCheck.current) {
       dispatch(
-        updateMenu({
-          home: true,
-          portfolio: false,
-          ourServices: false,
-          aboutUs: false,
-          contactUs: false,
-        })
+        updateMenu([
+          { path: "/", title: "HOME", status: true },
+          { path: "/portfolio", title: "PORTFOLIO", status: false },
+          { path: "/our_services", title: "OUR SERVICES", status: false },
+          { path: "/about", title: "ABOUT US", status: false },
+          { path: "/contact_us", title: "CONTACT US", status: false },
+        ])
       );
     }
     return () => {
       pageCheck.current = true;
     };
-  }, []);
+  }, [dispatch]);
   return (
     <>
       <Head>

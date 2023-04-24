@@ -3,7 +3,8 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 
 function Navbar() {
-  const menu = useSelector(state => state.menu.topMenu.mainTopMenu);
+  const menu = useSelector((state) => state.menu.topMenu.mainTopMenu);
+  // console.log(menu);
   return (
     <div className="relative z-50 w-full">
       <nav className="fixed top-0 left-0 right-0 flex justify-between bg-gradient-to-r from-violet-700 to-violet-400 ... shadow-lg shadow-sky-950/50">
@@ -22,7 +23,12 @@ function Navbar() {
           {menu.map((item, index) => {
             return (
               <li key={index} className="font-inter font-normal">
-                <Link href={item.path}>{item.title}</Link>
+                <Link
+                  href={item.path}
+                  className={item.status ? "text-amber-300" : ""}
+                >
+                  {item.title}
+                </Link>
               </li>
             );
           })}

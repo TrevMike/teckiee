@@ -4,25 +4,19 @@ const menuData = createSlice({
   name: "MenuDataInfo",
   initialState: {
     topMenu: {
-      menuPlacement: {
-        home: false,
-        portfolio: false,
-        ourServices: false,
-        aboutUs: false,
-        contactUs: false,
-      },
       mainTopMenu: [
-        { path: "/", title: "HOME" },
-        { path: "/portfolio", title: "PORTFOLIO" },
-        { path: "/our_services", title: "OUR SERVICES" },
-        { path: "/about", title: "ABOUT US" },
-        { path: "/contact_us", title: "CONTACT US" },
+        { path: "/", title: "HOME", status: false },
+        { path: "/portfolio", title: "PORTFOLIO", status: false },
+        { path: "/our_services", title: "OUR SERVICES", status: false },
+        { path: "/about", title: "ABOUT US", status: false },
+        { path: "/contact_us", title: "CONTACT US", status: false },
       ],
     },
   },
   reducers: {
     updateMenu: (state, action) => {
-      state.topMenu.menuPlacement = action.payload;
+      state.topMenu.mainTopMenu = action.payload;
+      // action.payload;
     },
   },
 });
