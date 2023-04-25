@@ -36,7 +36,7 @@ function Pricing() {
   return (
     <div className="bg-zinc-50">
       <h2 className="bg-gradient-to-r from-violet-700 to-violet-400 ... text-slate-100 text-center p-12 mb-12 font-inter font-extrabold text-5xl">
-        LET'S BUILD YOUR TOMORROW, TODAY!
+        LET&apos;S BUILD YOUR TOMORROW, TODAY!
       </h2>
       <div className="flex justify-evenly pb-6">
         <button

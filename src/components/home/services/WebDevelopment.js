@@ -22,10 +22,10 @@ function WebDevelopment() {
           </h2>
           <p className="text-slate-400 py-2 font-nunito font-light">
             Our team is committed to high-quality digital solutions at a
-            competitive price. Whether you're looking to revamp your website,
-            improve your online presence, or build a strong brand, we're here to
-            provide you with the professional services you need to succeed
-            online.
+            competitive price. Whether you&apos;re looking to revamp your
+            website, improve your online presence, or build a strong brand,
+            we&apos;re here to provide you with the professional services you
+            need to succeed online.
           </p>
           <p className="text-slate-400 py-2 font-nunito font-light">
             With personalized digital solutions tailored to your unique needs,

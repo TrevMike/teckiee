@@ -27,7 +27,19 @@ function About() {
       <Head>
         <title>Teckiee | About Us</title>
       </Head>
-      <div className="pt-14">This is the About Us Page</div>
+      <div className="pt-14">
+        <h1 className="text-center">
+          From passion to Purpose: Turning Passion into a Leading Tech Service
+        </h1>
+        <p>
+          Michael and Eddie, the managing partners of our company, bonded over
+          their shared passion for technology during a chance encounter at a
+          local bookstore. After discussing their ideas, they realized they had
+          the potential to create something great together. With a focus on web
+          development, networking, and marketing and design, they are dedicated
+          to providing exceptional services to their clients.
+        </p>
+      </div>
     </>
   );
 }
