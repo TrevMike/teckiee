@@ -613,6 +613,10 @@ video {
   height: 100vh;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -717,16 +721,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-r-lg {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -737,12 +731,27 @@ video {
   border-bottom-left-radius: 0.5rem;
 }
 
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
 .rounded-bl-lg {
   border-bottom-left-radius: 0.5rem;
 }
 
-.rounded-tl-lg {
-  border-top-left-radius: 0.5rem;
+.border {
+  border-width: 1px;
+}
+
+.border-l-fuchsia-400 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(232 121 249 / var(--tw-border-opacity));
 }
 
 .bg-indigo-950 {
@@ -795,6 +804,14 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-purple-500 {
+  --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-violet-700 {
   --tw-gradient-from: #6d28d9 var(--tw-gradient-from-position);
   --tw-gradient-from-position:  ;
@@ -803,12 +820,9 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-purple-500 {
-  --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-from-position);
+.to-indigo-600 {
+  --tw-gradient-to: #4f46e5 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .to-purple-500 {
@@ -818,11 +832,6 @@ video {
 
 .to-violet-400 {
   --tw-gradient-to: #a78bfa var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
-}
-
-.to-indigo-600 {
-  --tw-gradient-to: #4f46e5 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
 

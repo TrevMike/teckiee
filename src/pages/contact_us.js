@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { updateMenu } from "@/redux/ducks/menu";
+import EmployeeCards from "@/components/businessCards/EmployeeCards";
 
 function ContactUs() {
   const dispatch = useDispatch();
@@ -28,7 +29,10 @@ function ContactUs() {
       <Head>
         <title>Teckiee | Contact Us</title>
       </Head>
-      <div className="pt-14">This is the Contact Us Page</div>
+      <div className="pt-14">
+        This is the Contact Us Page
+        <EmployeeCards />
+      </div>
     </>
   );
 }
