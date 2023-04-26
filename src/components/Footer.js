@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="hidden lg:block">
       <div className="flex p-6">
         <div className="flex flex-col">
           <h3 className="font-inter font-medium">Teckiee</h3>

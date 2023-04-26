@@ -29,8 +29,7 @@ function ContactUs() {
       <Head>
         <title>Teckiee | Contact Us</title>
       </Head>
-      <div className="pt-14">
-        This is the Contact Us Page
+      <div className="lg:pt-14">
         <EmployeeCards />
       </div>
     </>
