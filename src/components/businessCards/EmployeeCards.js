@@ -40,7 +40,7 @@ function EmployeeCards() {
       <div className="absolute w-full z-40 top-0 left-0  mb-12">
         <div className="w-full h-44 relative ">
           <Image
-            src="/hexagon.svg"
+            src="/Hexagon.svg"
             alt="hexagon shape"
             fill
             className="pt-5"

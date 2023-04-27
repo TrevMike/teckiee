@@ -43,7 +43,7 @@ function Quote() {
   useEffect(() => {
     const index = Math.floor(Math.random() * quoteOfTheDay.length);
     setQuoteData(quoteOfTheDay[index]);
-  }, []);
+  }, [quoteOfTheDay]);
   // console.log(quoteChooser());
   return (
     <div className="flex justify-center bg-indigo-950 py-32">
