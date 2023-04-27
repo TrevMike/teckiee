@@ -15,6 +15,7 @@ export default function Home() {
   const pageCheck = useRef(false);
   useEffect(() => {
     if (pageCheck.current) {
+      console.log("popping");
       dispatch(
         updateMenu([
           { path: "/", title: "HOME", status: true },
