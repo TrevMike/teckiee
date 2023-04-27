@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function EmployeeCards() {
   const [toggle, setToggle] = useState(0);
-  const [input, setInput] = useState("");
+  // const [input, setInput] = useState("");
   const employeeInfo = [
     {
       name: "Michael Trevino",
