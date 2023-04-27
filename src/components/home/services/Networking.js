@@ -42,7 +42,7 @@ function Networking() {
                   key={index}
                 >
                   <span className="relative h-4 w-4">
-                    <Image src="/shape.svg" alt="testing" fill />
+                    <Image src="/Shape.svg" alt="testing" fill />
                   </span>
 
                   <span className="pl-1 font-nunito font-light">{item}</span>
