@@ -12,24 +12,23 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const dispatch = useDispatch();
-  const pageCheck = useRef(false);
+  // const pageCheck = useRef(false);
   useEffect(() => {
-    console.log("This is popping!");
-    if (pageCheck.current) {
-      console.log("popping");
-      dispatch(
-        updateMenu([
-          { path: "/", title: "HOME", status: true },
-          { path: "/portfolio", title: "PORTFOLIO", status: false },
-          { path: "/our_services", title: "OUR SERVICES", status: false },
-          { path: "/about", title: "ABOUT US", status: false },
-          { path: "/contact_us", title: "CONTACT US", status: false },
-        ])
-      );
-    }
-    return () => {
-      pageCheck.current = true;
-    };
+    dispatch(
+      updateMenu([
+        { path: "/", title: "HOME", status: true },
+        { path: "/portfolio", title: "PORTFOLIO", status: false },
+        { path: "/our_services", title: "OUR SERVICES", status: false },
+        { path: "/about", title: "ABOUT US", status: false },
+        { path: "/contact_us", title: "CONTACT US", status: false },
+      ])
+    );
+    // if (pageCheck.current) {
+    //development phase
+    // }
+    // return () => {
+    //   pageCheck.current = true;
+    // };
   }, [dispatch]);
   return (
     <>

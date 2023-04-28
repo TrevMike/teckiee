@@ -8,16 +8,16 @@ function ContactUs() {
   const dispatch = useDispatch();
   const pageCheck = useRef(false);
   useEffect(() => {
+    dispatch(
+      updateMenu([
+        { path: "/", title: "HOME", status: false },
+        { path: "/portfolio", title: "PORTFOLIO", status: false },
+        { path: "/our_services", title: "OUR SERVICES", status: false },
+        { path: "/about", title: "ABOUT US", status: false },
+        { path: "/contact_us", title: "CONTACT US", status: true },
+      ])
+    );
     if (pageCheck.current) {
-      dispatch(
-        updateMenu([
-          { path: "/", title: "HOME", status: false },
-          { path: "/portfolio", title: "PORTFOLIO", status: false },
-          { path: "/our_services", title: "OUR SERVICES", status: false },
-          { path: "/about", title: "ABOUT US", status: false },
-          { path: "/contact_us", title: "CONTACT US", status: true },
-        ])
-      );
     }
     return () => {
       pageCheck.current = true;
