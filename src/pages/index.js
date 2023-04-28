@@ -14,6 +14,7 @@ export default function Home() {
   const dispatch = useDispatch();
   const pageCheck = useRef(false);
   useEffect(() => {
+    console.log("This is popping!");
     if (pageCheck.current) {
       console.log("popping");
       dispatch(
