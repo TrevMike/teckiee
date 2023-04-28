@@ -74,7 +74,7 @@ function Footer() {
             onChange={e => setInput(e.target.value)}
             className="bg-indigo-950 border rounded-md py-3 px-5 w-3/5 font-inter font-light"
           />
-          <button className="absolute text-center right-2 top-2 w-1/6 py-1 font-inter font-bold rounded-md bg-gradient-to-r from-violet-700 to-violet-400 ...">
+          <button className="absolute text-center right-2 top-2 w-1/6 py-1 px-2 font-inter font-bold rounded-md bg-gradient-to-r from-violet-700 to-violet-400 ...">
             Subscribe {">"}
           </button>
         </div>
