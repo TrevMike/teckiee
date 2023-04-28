@@ -26,7 +26,7 @@ function BusinessPartners() {
   return (
     <section className="bg-indigo-950 p-10">
       <h4 className="text-violet-400 text-center font-montserrat font-normal">
-        Trusted by Big PP Companies
+        Trusted by Big Companies
       </h4>
       <div className="flex justify-evenly">
         {Companies.map((item, index) => {
