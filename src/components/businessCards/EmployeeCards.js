@@ -33,7 +33,7 @@ function EmployeeCards() {
     <div className="bg-violet-500 h-screen flex flex-col justify-between items-center">
       {/* <div className="absolute w-full z-40 top-0 left-0"> */}
       <div className="relative w-full h-36 min-h-44 min-h-44 object-cover ">
-        <Image src="/bc_bgv2.png" alt="watery cave" fill priority={true} />
+        <Image src="/bc_bgv3.png" alt="watery cave" fill priority={true} />
       </div>
       {/* </div> */}
 
@@ -50,7 +50,7 @@ function EmployeeCards() {
             src="/dummyshot.png"
             alt="employee headshot"
             fill
-            className="px-28 py-6"
+            className="px-32 py-6"
             priority={true}
           />
         </div>
