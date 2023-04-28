@@ -38,7 +38,7 @@ function Footer() {
         <div className="relative w-2/5 h-auto">
           <Image src="/robotv2.svg" alt="company robtot mascot" fill />
         </div>
-        <div className="flex w-1/5">
+        <div className="flex w-1/4">
           {links.map((item, index) => {
             return (
               <div className="flex flex-col w-1/3" key={index}>
